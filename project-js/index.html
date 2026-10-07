@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Prediction App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="search">
+          <input type="text" id="query" placeholder="Search..." autocomplete="off" />
+          <button id="search" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="weather-icon">
+          <img id="icon" src="https://i.ibb.co/rb4rrJL/26.png" alt="weather icon" />
+        </div>
+
+        <div class="temp">
+          <h1 id="temp">0</h1>
+          <span class="temp-unit">°C</span>
+        </div>
+
+        <div class="date-time">
+          <p id="date-time">Tuesday, 00:00</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="condition-rain">
+          <div class="condition">
+            <p id="condition">Condition</p>
+          </div>
+          <div class="rain">
+            <p>Perc - <span id="rain">0</span>%</p>
+          </div>
+        </div>
+
+        <div class="location">
+          <p id="location">Location</p>
+        </div>
+      </div>
+
+      <div class="main">
+        <nav>
+          <ul class="options">
+            <li class="hourly" id="today-btn">Today</li>
+            <li class="week active" id="week-btn">Week</li>
+          </ul>
+          <ul class="units">
+            <li class="celcius active" id="celsius-btn">°C</li>
+            <li class="fahrenheit" id="fahrenheit-btn">°F</li>
+          </ul>
+        </nav>
+
+        <div class="weather-cards" id="weather-cards"></div>
+
+        <h2 class="heading">Today's Highlights</h2>
+
+        <div class="highlights">
+          <div class="card2">
+            <h4 class="card-heading">UV Index</h4>
+            <div class="content">
+              <p class="uv-index">0</p>
+              <p class="uv-text">Low</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Wind Status</h4>
+            <div class="content">
+              <p class="wind-speed">0</p>
+              <p class="wind-text">km/h</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Sunrise &amp; Sunset</h4>
+            <div class="content">
+              <p class="sun-rise">0</p>
+              <p class="sun-set">0</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Humidity</h4>
+            <div class="content">
+              <p class="humidity">0</p>
+              <p class="humidity-status">Normal</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Visibility</h4>
+            <div class="content">
+              <p class="visibilty">0</p>
+              <p class="visibilty-status">Normal</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Air Quality</h4>
+            <div class="content">
+              <p class="air-quality">0</p>
+              <p class="air-quality-status">Normal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          Weather Prediction App by
+          <a href="#" target="_blank" rel="noopener">Hyma</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
